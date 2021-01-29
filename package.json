@@ -17,6 +17,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
+    "browserify": "^17.0.0",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
