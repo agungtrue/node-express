@@ -7,6 +7,7 @@ const morgan = require('morgan');
 //start app
 const app = express();
 const cookieParser = require('cookie-parser')
+const compression = require('compression')
 
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
@@ -77,6 +78,8 @@ app.use('/api', validateJWT);
 //     //middleware
 //     next();
 // })
+
+app.use(compression())
 
 //test using middleware
 app.use((req, res, next) => {
