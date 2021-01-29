@@ -24,7 +24,7 @@ exports.signup = CatchAsync(async (req, res, next) => {
     newUser.password = undefined;
 
     const url = `${req.protocol}://${req.get('host')}/overview`
-    await new Email(newUser, url).sendWelcome()
+    if(process.env.NODE_ENV !== 'production') await new Email(newUser, url).sendWelcome()
 
     res.status(201).json({
         status: 'success',
