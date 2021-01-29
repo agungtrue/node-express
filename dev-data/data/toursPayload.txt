@@ -1,0 +1,28 @@
+{
+    "name": "hello 2021",
+    "duration": 5,
+    "maxGroupSize": 25,
+    "difficulty": "easy",
+    "ratingsAverage": 3,
+    "guides" : [
+        "5f3e35f0b2883183a0051653",
+        "5f3e36d32cd42183fcb40848"
+    ],
+     "imageCover": "tour-1-cover.jpg",
+    "ratingsQuantity": 37,
+    "price": 200,
+    "priceDiscount": 100,
+    "summary": "Breathtaking hike through the Canadian Banff National Park",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+   
+    "images": [
+        "tour-1-1.jpg",
+        "tour-1-2.jpg",
+        "tour-1-3.jpg"
+    ],
+    "startDates": [
+        "2021-04-25,10:00",
+        "2021-07-20,10:00",
+        "2021-10-05,10:00"
+    ]
+}
