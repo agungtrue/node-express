@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 // import express from 'express';
 const morgan = require('morgan');
+
+//start app
 const app = express();
 const cookieParser = require('cookie-parser')
 
