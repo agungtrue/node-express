@@ -9,9 +9,19 @@ const app = express();
 app.enable('trust proxy')
 const cookieParser = require('cookie-parser')
 const compression = require('compression')
+const cors = require('cors')
 
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
+
+app.use(cors());
+
+//specific origin
+// app.use(cors({
+//     origin: 'https://www.example.com'
+// }))
+
+app.options('*', cors());
 
 //serving static files
 // app.use(express.static(`${__dirname}/public`));
