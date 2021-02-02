@@ -16,8 +16,11 @@ exports.signup = CatchAsync(async (req, res, next) => {
         httpOnly: true
     };
 
-    if(process.env.NODE_ENV === 'production') setCookie.secure = true;
+    // if(process.env.NODE_ENV === 'production') setCookie.secure = true;
 
+    //handle heroku testing https
+    if(req.secure || req.headers['x-forwarded--proto'] === 'https') setCookie.secure = true;
+ 
     res.cookie('jwt', token, setCookie);
 
     //remove password from displayed

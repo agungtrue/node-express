@@ -6,6 +6,7 @@ const morgan = require('morgan');
 
 //start app
 const app = express();
+app.enable('trust proxy')
 const cookieParser = require('cookie-parser')
 const compression = require('compression')
 
